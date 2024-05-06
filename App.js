@@ -1,10 +1,7 @@
-import { Text, View } from "react-native";
+import ExampleStyles from "./src/class-style/style-styled";
 
 export default function App() {
   return (
-    <View>
-      <Text>INDMO</Text>
-      <Text>Hello World!</Text>
-    </View>
+      <ExampleStyles />
   );
 }

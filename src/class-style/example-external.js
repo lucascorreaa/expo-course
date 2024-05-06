@@ -1,8 +1,8 @@
 import { Text, View } from "react-native";
 
-import { styles } from "./style-externo";
+import { styles } from "./style-external";
 
-export default function App() {
+export default function ExampleStyles() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>INDMO</Text>

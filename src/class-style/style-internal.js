@@ -1,6 +1,6 @@
 import { Text, View, StyleSheet } from "react-native";
 
-export default function App() {
+export default function StyleInternal() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>INDMO</Text>
