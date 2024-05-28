@@ -1,5 +1,5 @@
-import Search from "./src/type-weather/pages/search";
+import HomePage from "./src/weatherFarm/pages/homePage";
 
 export default function App() {
-  return <Search />;
+  return <HomePage />;
 }
