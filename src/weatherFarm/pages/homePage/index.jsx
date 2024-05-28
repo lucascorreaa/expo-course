@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { Container } from "../../../class-component/native-component/styles";
-import { Image, Text, TextInput, TouchableOpacity } from "react-native"
+import { Image, Text, TextInput, TouchableOpacity, ImageBackground } from "react-native"
 
 export default function HomePage(){
 
@@ -28,11 +28,11 @@ export default function HomePage(){
     setCity(updateCity);
   }
 
-
     return(
         <Container style={{
-            backgroundColor: 'blue',
+            
         }}>
+
             <TextInput 
                 placeholder="Search Location" 
                 onChangeText={handleSetCity}
@@ -43,9 +43,21 @@ export default function HomePage(){
                     height: 30,
                 }}
             ></TextInput>
-
-            <TouchableOpacity onPress={getData}><Text>Click aqui</Text></TouchableOpacity>
-            <Text>{data.temperature}</Text>
+            <TouchableOpacity onPress={getData}><Text style={{
+                backgroundColor: 'green',
+                width: 100,
+                height: 40,
+            }}>Click aqui</Text></TouchableOpacity>
+                <Text style={{
+                    fontSize: 30,
+                    color: 'white',
+                    fontWeight: 500
+                }}>{city}</Text>
+            <Text style={{
+                fontSize: 100,
+                color: 'white',
+                fontWeight: 800,
+            }}>{data.temperature}</Text>
             <Image source={require('../homePage/assets/img/iconSunMin.png')} />
  
         </Container>
