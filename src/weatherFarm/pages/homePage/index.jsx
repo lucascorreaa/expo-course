@@ -3,7 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { Container } from "../../../class-component/native-component/styles";
-import { Image, Text, TextInput, TouchableOpacity, ImageBackground } from "react-native"
+import { Image, Text, TextInput, TouchableOpacity, ImageBackground, View, Button } from "react-native"
 
 export default function HomePage(){
 
@@ -29,37 +29,59 @@ export default function HomePage(){
   }
 
     return(
-        <Container style={{
-            
+
+        <ImageBackground source={require('./assets/img/backgroundIMG.png')}
+        style={{
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: 50,
         }}>
 
-            <TextInput 
-                placeholder="Search Location" 
-                onChangeText={handleSetCity}
-                value={city}
-                style={{
-                    backgroundColor: '#9d9d9d',
-                    width: 200,
-                    height: 30,
-                }}
-            ></TextInput>
-            <TouchableOpacity onPress={getData}><Text style={{
-                backgroundColor: 'green',
-                width: 100,
-                height: 40,
-            }}>Click aqui</Text></TouchableOpacity>
+           <View style={{
+            display: 'flex',
+            flexDirection: 'row',
+           }}>
+                <TextInput 
+                    placeholder="Search Location" 
+                    onChangeText={handleSetCity}
+                    value={city}
+                    style={{
+                        backgroundColor: '#9d9d9d',
+                        width: 200,
+                        height: 30,
+                        borderRadius: 5,     
+                    }}
+                ></TextInput>
+                <Button 
+                onPress={getData}
+                title='Aqui'
+                > 
+                    <Image 
+                    source={require('./assets/img/Vector.png')}
+                    style={{
+                        width: 20,
+                        height: 20,
+                        marginRight: 10,
+                    }}/> 
+                 </Button>
+           </View>
+           <View>
+                    <Text style={{
+                        fontSize: 30,
+                        color: 'white',
+                        fontWeight: 500
+                    }}>{city}</Text>
                 <Text style={{
-                    fontSize: 30,
+                    fontSize: 100,
                     color: 'white',
-                    fontWeight: 500
-                }}>{city}</Text>
-            <Text style={{
-                fontSize: 100,
-                color: 'white',
-                fontWeight: 800,
-            }}>{data.temperature}</Text>
-            <Image source={require('../homePage/assets/img/iconSunMin.png')} />
- 
-        </Container>
+                    fontWeight: 800,
+                }}>{data.temperature}</Text>
+           </View>
+
+
+
+                {/* <Image source={require('../homePage/assets/img/iconSunMin.png')} /> */}
+        </ImageBackground>
     )
 }
