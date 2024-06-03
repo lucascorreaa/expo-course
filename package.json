@@ -9,14 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "^51.0.5",
+    "@expo/metro-runtime": "~3.2.1",
+    "@types/react": "~18.2.79",
+    "expo": "^51.0.9",
     "expo-status-bar": "~1.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "0.73.4",
+    "react-native": "^0.73.8",
+    "react-native-web": "~0.19.10",
     "styled-components": "^6.1.9",
-    "typescript": "~5.3.3",
-    "@types/react": "~18.2.79"
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
