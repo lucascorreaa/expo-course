@@ -1,20 +1,19 @@
 // import baseRequest from './axiosBaseUrl'; 
-const { useState } = require('react');
-const baseRequest = require('./axiosBaseUrl');
-require('dotenv').config();
 
-const apiKey = process.env.API_KEY;
+import baseRequest from './axiosBaseUrl'
+
+
+// const apiKey = process.env.API_KEY;
 export async function getWeatherByCity(city) {
     try {
         const response = await baseRequest.get('/weather', {
             params: {
                 q: city, 
-                appid: apiKey,
+                appid: 'a1aac202a64668472fff5a3689bc4c61',
                 units:'metric'
             }
         });
-        
-        console.log(response.data);
+    
         return dataObject = [
             {temp: response.data.main.temp},
             {feels_like: response.data.main.feels_like},
