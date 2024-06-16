@@ -1,5 +1,5 @@
-import Search from "./src/type-weather/pages/home";
+import Home from "./src/type-weather/pages/home";
 
 export default function App() {
-  return <Search />;
+  return <Home />;
 }
