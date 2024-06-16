@@ -5,6 +5,8 @@ export const Container = styled.ImageBackground`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
 `;
 
 export const HeaderContainer = styled.View`
@@ -18,8 +20,8 @@ export const HeaderContainer = styled.View`
 `;
 
 export const HeaderImg = styled.Image`
-  width: 36px;
-  height: 24px;
+  width: 176px;
+  height: 108px;
 `;
 
 export const TitleText = styled.Text`
@@ -50,10 +52,40 @@ export const TitleColored = styled.Text`
 `;
 
 export const Input = styled.TextInput`
-  margin-top: 32px;
+  margin-top: 49px;
   color: white;
-  width: 311px;
-  height: 36px;
+  width: 360px;
+  height: 47px;
   padding-left: 20px;
-  background-color: #7f7f98;
+  border-radius: 10px;
+  background-color: #000000;
+  opacity: 0.5;
+`;
+
+export const Tempeature = styled.View`
+  width: 360px;
+  height: 266px;
+  background-color: #000000;
+  border-radius: 10px;
+  opacity: 0.5;
+  margin-top: 12px;
+`;
+
+export const MinMax = styled.Text``;
+
+export const ForecastContainer = styled.View`
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 100px;
+`;
+
+export const Forecast = styled.View`
+  width: 80px;
+  height: 160px;
+  background-color: #000000;
+  border-radius: 10px;
+  opacity: 0.5;
 `;

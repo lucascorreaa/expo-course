@@ -1,5 +1,5 @@
 {
-  "name": "awesomeproject",
+  "name": "no-seu-tempo",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -9,14 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "^51.0.5",
+    "@expo-google-fonts/nunito": "^0.2.3",
+    "@types/react": "~18.2.79",
+    "expo": "^51.0.14",
+    "expo-font": "~12.0.7",
     "expo-status-bar": "~1.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.73.4",
     "styled-components": "^6.1.9",
-    "typescript": "~5.3.3",
-    "@types/react": "~18.2.79"
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
