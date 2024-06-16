@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from "styled-components";
 
 export const Container = styled.ImageBackground`
   flex: 1;
@@ -61,17 +61,6 @@ export const Input = styled.TextInput`
   background-color: #000000;
   opacity: 0.5;
 `;
-
-export const Tempeature = styled.View`
-  width: 360px;
-  height: 266px;
-  background-color: #000000;
-  border-radius: 10px;
-  opacity: 0.5;
-  margin-top: 12px;
-`;
-
-export const MinMax = styled.Text``;
 
 export const ForecastContainer = styled.View`
   flex: 1;
